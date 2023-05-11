@@ -61,5 +61,15 @@ def control_stst():
     ]
     return render_template("control.html",age=age,books=books)
 
+# 子页面
+@app.route('/child1')
+def child1():
+    return render_template("child1.html")
+
+# 子页面2
+@app.route('/child2')
+def child2():
+    return render_template("child2.html")
+
 if __name__ == '__main__':
     app.run()
