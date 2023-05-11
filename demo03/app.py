@@ -71,5 +71,12 @@ def child1():
 def child2():
     return render_template("child2.html")
 
+# 加载静态文件
+@app.route('/statistic')
+def statistic():
+    return render_template("statistic.html")
+
+
+
 if __name__ == '__main__':
     app.run()
