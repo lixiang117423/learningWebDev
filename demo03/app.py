@@ -46,5 +46,20 @@ def filter_demo():
     time = datetime.now()
     return render_template("filter.html", user=user, time=time)
 
+# 控制语句
+@app.route('/control')
+def control_stst():
+    age = 18
+    books = [{
+        "name":"三国演义",
+        "author":"罗贯中"
+    },
+        {
+            "name": "个人专辑",
+            "author": "小蓝哥"
+        }
+    ]
+    return render_template("control.html",age=age,books=books)
+
 if __name__ == '__main__':
     app.run()

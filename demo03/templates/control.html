@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>控制语句示例</title>
+</head>
+<body>
+{%  if age>18 %}
+    <div>您已年满18岁，可以进入KTV！</div>
+{%  elif age==18 %}
+    <div>您刚刚满18岁，还不可以进入！</div>
+{%  else %}
+    <div>小屁孩，滚出去！</div>
+{% endif %}
+<!-- if语句需要结束 -->
+
+{%  for book in books %}
+    <div><h2>图书名称是：{{ book.name }},作者是：{{ book.author }}</h2></div>
+{% endfor %}
+<!-- for循环没有break语句 -->
+</body>
+</html>
