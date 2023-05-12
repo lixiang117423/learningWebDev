@@ -76,7 +76,5 @@ def child2():
 def statistic():
     return render_template("statistic.html")
 
-
-
 if __name__ == '__main__':
     app.run()
